@@ -13,6 +13,7 @@ export default class ProductsTable extends Component {
       if (product.name.indexOf(filterText) === -1) {
         return;
       }
+      console.log(inStockOnly)
       if (inStockOnly && !product.stocked) {
         return;
       }
